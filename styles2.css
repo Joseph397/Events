@@ -1,0 +1,10 @@
+.spectacular{
+    color: red;
+    font-size: 50px;
+    transition: all .5s ease;
+    transform: translatex(200px) rotatex(420deg);
+}
+
+.main-title {
+    transition: all .5s ease;
+}

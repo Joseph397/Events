@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events 3</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <ul id="todo-list">
+      <li class="item">Item1</li>
+      <li class="item">Item2</li>
+    </ul>
+    <h2 class="todo-nr">Number of items:<b></b></h2>
+    <button id="submit">SUBMIT</button>
+
+    <h1 class="main-title">My Website</h1>
+    <!-- javascript Below ----------------------------------------->
+    <script>
+      const button = document.querySelector("#submit");
+      const todoList = document.querySelector("#todo-list");
+      const todoNr = document.querySelector(".todo-nr b"); // selects bold tag from the .todo-nr
+      const mainTitle = document.querySelector(".main-title");
+
+      button.addEventListener("keydown", function (event) {
+        if (event.keyCode === 81) { // only runs if Q key is pressed
+            mainTitle.classList.toggle('spectacular');
+        }
+      });
+    </script>
+  </body>
+</html>
